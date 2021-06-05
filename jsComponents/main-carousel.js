@@ -4,11 +4,11 @@ const elements = document.querySelector('.elements');
 let pixels = 0;
 
 btnRight.addEventListener('click', function () {
-    pixels -= 100;
+    pixels -= 400;
     elements.style = `transform: translateX(${pixels}px)`;
 });
 
 btnLeft.addEventListener('click', function () {
-    pixels += 100;
+    pixels += 400;
     elements.style = `transform: translateX(${pixels}px)`;
 });
