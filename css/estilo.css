@@ -709,6 +709,124 @@ button {
     }
 }
 
+/*node-card2*/
+
+.node-card2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right:220px;
+    
+}
+
+.node-card2::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 0px;
+    width: 30px;
+    border: 2.5px dashed #000;
+    transform: rotate(90deg) translateX(-45%);
+    bottom: 395px;
+}
+
+.node-card2 .title {
+    font-family: BStencil Std, fantasy;
+    font-size: 30px;
+    font-weight: 300;
+    color: #9b9b9b;
+    text-shadow: 2px 2px 0px #000;
+    margin-bottom: 50px;
+}
+
+.node-card2 .logo {
+    display: flex;
+    align-items: center;
+    height: 131px;
+    border: 5px solid #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #9b9b9b;
+}
+
+.node-card2.-clean .logo {
+    padding: 0;
+}
+
+.node-card2.-first .logo {
+    background-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .node-card2 .title {
+        font-size: 18px;
+    }
+    .node-card2::before {
+        bottom: 395px;
+    }
+}
+
+@media (max-width: 765px) {
+    .node-card2 .title {
+        font-size: 16px;
+    }
+    .node-card2::before {
+        bottom: 395px;
+    }
+}
+
+@media (max-width: 587px) {
+    .node-card2 .title {
+        font-size: 16px;
+    }
+    .node-card2::before {
+        bottom: 395px;
+    }
+    .node-card2.logo{
+        height: 100px;
+    }
+    .node-card2 .logo img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 533px) {
+    .node-card2 .title {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .node-card2::before {
+        display: none;
+    }
+    .node-card2 .logo{
+        height: 70px;
+    }
+    .node-card2 .logo img{
+        width: 70px;
+    }
+}
+
+@media (max-width: 425px) {
+    .node-card2 .title {
+        text-align: center;
+        width: 100px;
+    }
+    .node-card2::before {
+        display: none;
+    }
+    .node-card2 .logo{
+        height: 60px;
+    }
+    .node-card2 .logo img{
+        width: 60px;
+    }
+    .node-card2{
+        margin-right: 20px;
+    }
+}
+
 /*progress-bar*/
 
 .progress-bar {
@@ -760,7 +878,9 @@ button {
 
 .wrapper-card{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    margin-left: 100px;
+    max-width: 600px;
 }
 
 @media (max-width: 900px) {
