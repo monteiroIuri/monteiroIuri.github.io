@@ -621,7 +621,6 @@ button {
     bottom: 0;
     height: 0px;
     width: 40px;
-    border: 2.5px dashed #000;
     transform: rotate(90deg) translateX(-45%);
     bottom: 140px;
 }
