@@ -314,6 +314,18 @@ button {
     
 }
 
+/*arround*/
+.arround{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*center*/
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 /*main-contacts*/
 
 .main-contacts {
